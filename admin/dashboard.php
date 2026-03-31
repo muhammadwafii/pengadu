@@ -33,8 +33,8 @@ if (!isset($_SESSION['login']) || $_SESSION['role'] != 'admin') {
             --glass-bg: rgba(255, 255, 255, 0.75);
             --glass-sidebar: rgba(255, 255, 255, 0.9);
             --glass-border: rgba(255, 255, 255, 0.5);
-            --text-main: #2c3e50;
-            --text-muted: #7f8c8d;
+            --text-main: #000000;
+            --text-muted: #000000;
             --primary: #6c5ce7;
             --sidebar-width: 260px;
         }
@@ -42,15 +42,7 @@ if (!isset($_SESSION['login']) || $_SESSION['role'] != 'admin') {
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
 
         /* --- ANIMATED BACKGROUND (SAMA DENGAN LOGIN) --- */
-        body {
-            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
-            min-height: 100vh;
-            color: var(--text-main);
-            display: flex;
-            overflow-x: hidden;
-        }
+       
 
         @keyframes gradientBG {
             0% { background-position: 0% 50%; }
@@ -279,7 +271,7 @@ if (!isset($_SESSION['login']) || $_SESSION['role'] != 'admin') {
         <!-- Header -->
         <div class="header">
             <div>
-                <h2 style="font-weight: 700; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Dashboard Admin</h2>
+                <h2 style="font-weight: 700; color: #000000; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Dashboard Admin</h2>
                 <p style="color: rgba(255,255,255,0.9);">Ringkasan aktivitas aspirasi hari ini.</p>
             </div>
             
